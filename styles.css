@@ -6,10 +6,17 @@
       height: 100%;
   
   }
-  .dark-mode{
+  body.dark-mode{
     background-color: rgb(42, 40, 40);
     color:aliceblue
+    
+    
 
+}
+#toggle{
+    color: black;
+    border: 2px solid black;
+    border-radius: 10px;
 }
   
   body {
