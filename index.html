@@ -7,12 +7,14 @@
 	<link rel="stylesheet" href="styles.css" />
 </head>
 
-<body>
-	<h1>CHATBOT</h1>
+<body class="dark-mode">
+    <button id="toggle" ><img src="https://miro.medium.com/v2/resize:fit:550/1*YgVSpxpP8H2I4GqbPmb1ag.jpeg" height="30px" width="30px">Theme</button>
+	<!-- <h1>CHATBOT</h1> -->
 	<div id="container" class="container">
 		<div id="chat" class="chat">
 			<div id="messages" class="messages"></div>
 			<input id="input" type="text" placeholder="Say something..." autocomplete="off" autofocus="true" />
+			<!-- <span><Button>Send</Button></span> -->
 		</div>
 		<img src="./robo-removebg-preview.png" alt="Robot cartoon" height="500vh">
 	</div>
@@ -20,5 +22,13 @@
 <script type="text/javascript" src="index.js" ></script>
 <script type="text/javascript" src="constants.js" ></script>
 <script type="text/javascript" src="speech.js" ></script>
+<script>
+	
+    
+let button=document.getElementById("toggle")
+button.addEventListener("click",()=>{
+    document.body.classList.toggle("dark-mode")
+})
+</script>
 
 </html>
